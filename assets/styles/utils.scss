@@ -1,0 +1,59 @@
+.succ {
+  &-container {
+    padding: 0 $spacing-abs-m;
+  }
+  &-section {
+    margin: $spacing-abs-m 0;
+  }
+  &-heading {
+    font-weight: 500;
+    margin-bottom: $spacing-abs-m;
+    font-size: 2rem;
+  }
+  &-product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: $spacing-abs-s;
+    margin-bottom: $spacing-abs-m;
+  }
+  &-card {
+    border-radius: $spacing-abs-s;
+    padding: $spacing-abs-s;
+    box-shadow: $base-shadow;
+    &--thumbnail {
+      border-radius: $spacing-abs-xs;
+      margin-bottom: $spacing-abs-xs;
+    }
+    &--heading {
+      font-weight: 500;
+      margin-bottom: $spacing-abs-s;
+    }
+  }
+  &-btn {
+    padding: $spacing-rel-xs $spacing-rel-s;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: $colour-primary-light;
+    border: 1px solid $colour-primary-dark;
+    border-radius: $spacing-abs-xs;
+    cursor: pointer;
+  }
+}
+
+.sale {
+  position: relative;
+  &::before {
+    content: "sale";
+    position: absolute;
+    top: 0;
+    background-color: $colour-accent;
+    color: $colour-body;
+    border: 1px solid $colour-body;
+    padding: $spacing-rel-xs $spacing-rel-s;
+    border-radius: $spacing-rel-xs;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: $spacing-rel-xxs;
+  }
+}

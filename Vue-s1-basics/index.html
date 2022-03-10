@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Succulent Stash</title>
+  <link rel="stylesheet" href="../assets/styles/css/index.css">
+  <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+  <div id="app" class="succ-container">
+
+    <div class="succ-section">
+      <h2 class="succ-heading">All plants</h2>
+      <ul class="succ-product-grid">
+        <li :class="{ sale: plant.isOnSale }" class="succ-card" v-for="plant in plants">
+          <img :src="plant.imgUrl" :alt="plant.name" class="succ-card--thumbnail">
+          <h3 class="succ-card--heading">{{ plant.name }}</h3>
+          <span>{{ plant.price.toFixed(2) }} €</span>
+        </li>
+      </ul>
+  
+      <button class="succ-btn" @click="toggleCheaperPlants">
+        <span v-if="showCheaperPlants">Hide cheaper plants</span>
+        <span v-else>Show cheaper plants</span>
+      </button>
+    </div>
+    
+    <div class="succ-section">
+      <div v-if="showCheaperPlants">
+        <h2 class="succ-heading">Plants under 4€</h2>
+        <ul class="succ-product-grid">
+          <li :class="{ sale: plant.isOnSale }" class="succ-card" v-for="plant in plantsUnder4Euro">
+            <img :src="plant.imgUrl" :alt="plant.name" class="succ-card--thumbnail">
+            <h3 class="succ-card--heading">{{ plant.name }}</h3>
+            <span>{{ plant.price.toFixed(2) }} €</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "fredoka";
+  src: url("../../fonts/Fredoka-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fredoka";
+  src: url("../../fonts/Fredoka-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fredoka";
+  src: url("../../fonts/Fredoka-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fredoka";
+  src: url("../../fonts/Fredoka-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fredoka";
+  src: url("../../fonts/Fredoka-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "fredoka", sans-serif;
+  font-weight: 300;
+}
+html img {
+  max-width: 100%;
+}
+html a {
+  text-decoration: none;
+}
+html ul {
+  list-style: none;
+}
+
+.succ-container {
+  padding: 0 2rem;
+}
+.succ-section {
+  margin: 2rem 0;
+}
+.succ-heading {
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.succ-product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.succ-card {
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.15);
+}
+.succ-card--thumbnail {
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.succ-card--heading {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.succ-btn {
+  padding: 0.5em 1em;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #F0E7D8;
+  border: 1px solid #AB9B96;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.sale {
+  position: relative;
+}
+.sale::before {
+  content: "sale";
+  position: absolute;
+  top: 0;
+  background-color: #A63A50;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+}
+
+/*# sourceMappingURL=index.css.map */

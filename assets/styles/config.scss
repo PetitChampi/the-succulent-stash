@@ -1,0 +1,29 @@
+// watch command:
+// sass --watch assets/styles/index.scss assets/styles/css/index.css
+
+
+// ----- colours
+$colour-body: #fff;
+$colour-primary-light: #F0E7D8;
+$colour-primary-dark: #AB9B96;
+$colour-accent: #A63A50;
+
+// ----- typography
+$base-ff: 'fredoka';
+
+// ----- effects
+$base-shadow: 0px 4px 15px 1px rgba(0,0,0, .15);
+
+// ----- spacing
+$spacing-abs-xxs: .25rem;
+$spacing-rel-xxs: .25em;
+$spacing-abs-xs: .5rem;
+$spacing-rel-xs: .5em;
+$spacing-abs-s: 1rem;
+$spacing-rel-s: 1em;
+$spacing-abs-m: 2rem;
+$spacing-rel-m: 2em;
+
+// ----- breakpoints
+$breakpoint-mob: 768px;
+$breakpoint-tab: 991px;
