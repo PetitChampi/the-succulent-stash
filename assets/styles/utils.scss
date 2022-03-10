@@ -36,7 +36,11 @@
     background-color: $colour-primary-light;
     border: 1px solid $colour-primary-dark;
     border-radius: $spacing-abs-xs;
+    transition: background-color ease .2s;
     cursor: pointer;
+    &:hover {
+      background-color: darken($colour-primary-light, 5%);
+    }
   }
 }
 

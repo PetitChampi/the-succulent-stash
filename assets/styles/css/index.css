@@ -86,7 +86,11 @@ html ul {
   background-color: #F0E7D8;
   border: 1px solid #AB9B96;
   border-radius: 0.5rem;
+  transition: background-color ease 0.2s;
   cursor: pointer;
+}
+.succ-btn:hover {
+  background-color: #e9dcc6;
 }
 
 .sale {

@@ -33,7 +33,7 @@ Vue.createApp({
           isOnSale: false
         }
       ],
-      showCheaperPlants: true
+      showCheaperPlants: false
     }
   },
   methods: {
